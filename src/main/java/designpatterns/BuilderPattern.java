@@ -1,10 +1,10 @@
 package designpatterns;
 
-public class User {
+class User {
     private String name;
     private String email;
 
-    private User(){
+    private User() {
     }
 
     public static class Builder {
@@ -44,7 +44,9 @@ public class User {
     private void setEmail(String email) {
         this.email = email;
     }
+}
 
+public class BuilderPattern {
     public static void main(String[] args) {
         User user = new User.Builder()
                 .withName("John")
@@ -54,6 +56,5 @@ public class User {
         System.out.println(user.getEmail());
         System.out.println(user.getName());
     }
-
 }
 

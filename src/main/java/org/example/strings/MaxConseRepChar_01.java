@@ -1,12 +1,13 @@
 package org.example.strings;
 
 // https://www.geeksforgeeks.org/dsa/maximum-consecutive-repeating-character-string/
+// Solution: https://www.youtube.com/watch?v=qRNB8CV3_LU
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class MaxConseRepChar {
+public class MaxConseRepChar_01 {
 
     // approach 1
 

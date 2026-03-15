@@ -5,7 +5,7 @@ package org.example.strings;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class CharFreqInOrderOfOccur {
+public class CharFreqInOrderOfOccur_02 {
     public static String find(String str) {
         Map<Character, Integer> counter = new LinkedHashMap<>();
 

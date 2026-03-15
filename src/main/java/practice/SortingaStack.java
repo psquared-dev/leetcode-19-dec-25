@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.Stack;
 
 public class SortingaStack {
@@ -7,12 +9,13 @@ public class SortingaStack {
         System.out.println(input);
 
         while (!input.isEmpty()) {
+            int popped = input.pop();
 
-            while (!tmpStack.isEmpty() && tmpStack.peek() > input.peek()) {
-                
+            while (!tmpStack.isEmpty() && tmpStack.peek() > popped) {
+                input.push(tmpStack.pop());
             }
 
-            tmpStack.push(input.pop());
+            tmpStack.push(popped);
         }
 
         return tmpStack;

@@ -4,7 +4,7 @@ package org.example.strings;
 
 import java.util.HashMap;
 
-public class FindUniqCharInStr {
+public class FindUniqCharInStr_03 {
     public static int find(String str){
         HashMap<Character, Integer> counter = new HashMap<>();
 
